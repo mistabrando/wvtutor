@@ -1,0 +1,24 @@
+<?php
+include_once("gmongo.php");
+//GET USER
+;
+$name = $_GET['name'];
+//ACCESS COMMENTLIST
+$c = $db->posts; 
+$doc = $c -> findOne(array( '_id' => new MongoId($_GET['id'])));
+$array = $doc['comments'];
+//INSERT NEW COMMENT
+$commentanduser = array(
+    'name' => $name,
+    'comment' => htmlspecialchars($_GET['comment'])
+);
+//PUSH PUSH
+array_push($array, $commentanduser);
+$insert1 = array(
+'post' => $doc['post'],
+'name' => $doc['name'],
+'comments'=>$array
+);
+$c -> update(array( '_id' => new MongoId($_GET['id'])), $insert1);
+header("Location: view.php?id=".$_GET['id']);
+?>

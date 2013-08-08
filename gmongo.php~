@@ -1,0 +1,5 @@
+<?php
+$m = new MongoClient(); // connect
+$db = $m->test1;
+$collection = $db->test;
+?>
