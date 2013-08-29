@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- This site was created by / belongs to Cheng Cheng.!-->
 <head>
     <title>Westview Tutoring</title>
     <link href="bootstrap.css" rel="stylesheet">
