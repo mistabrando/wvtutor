@@ -2,7 +2,7 @@
 <html lang="en">
 <!-- This site was created by / belongs to Cheng Cheng.!-->
 <head>
-    <title>Wordsmith Tutoring</title>
+    <title>Westview Tutoring</title>
     <link href="bootstrap.css" rel="stylesheet">
 </head>
 <body>
