@@ -44,11 +44,11 @@ Verify with Facebook</a>
 <br>
 <h2>No Facebook Account?</h2>
 <form action = 'validate.php' method = 'POST'>
-	<label>First Name</label>
+	<label>First Name</label><br>
 	<input type = 'text' name = 'firstname'/>
-	<label>Last Name</label>
+	<label>Last Name</label><br>
 	<input type = 'text' name = 'lastname'/>
-	<label>Last name of Principal in ALL CAPS</label>
+	<label>Last name of Principal in ALL CAPS</label><br>
 	<input type = 'text' name = 'captcha'/><br>
 	<input type = 'submit'/>
 </form>
