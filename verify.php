@@ -41,7 +41,18 @@
 <h2>We need to verify you're a Westview Student</h2>
 <a class = "btn btn-primary" href = "https://www.facebook.com/dialog/oauth?client_id=332012720216303&redirect_uri=http://www.wvtutor.com/verify.php&scope=user_about_me,user_activities,user_education_history&response_type=token">
 Verify with Facebook</a>
-		   
+<br>
+<h2>No Facebook Account?</h2>
+<form action = 'validate.php' method = 'POST'>
+	<label>First Name</label>
+	<input type = 'text' name = 'firstname'/>
+	<label>Last Name</label>
+	<input type = 'text' name = 'lastname'/>
+	<label>Last name of Principal in ALL CAPS</label>
+	<input type = 'text' name = 'captcha'/><br>
+	<input type = 'submit'/>
+</form>
+<br>
 <h3 align = "left">Instructions</h3>
 <p align = "left">After you log into chat, please state what class you need help with and your Skype ID.<br>
 Connect with the tutor through Skype.(They may display their ID in the chatroom or pm you in Skype)<br>
