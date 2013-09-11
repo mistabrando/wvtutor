@@ -1,5 +1,10 @@
 <?php
 session_start();
+if(isset($_GET['firstname']) && isset($_GET['lastname']) && isset($_GET['captcha']) && ($_GET['captcha'] == 'CASSEN'))
+{
+ $_SESSION['user'] = array('name' => $_GET['firstname'] + $_GET['lastname']);
+ header("Location: chat.php");
+}
 //grab token
 $token = $_GET['access_token'];
 $url = "https://graph.facebook.com/me?access_token=".$token;
