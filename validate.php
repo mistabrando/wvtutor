@@ -4,6 +4,7 @@ if(isset($_GET['firstname']) && isset($_GET['lastname']) && isset($_GET['captcha
 {
  $_SESSION['user'] = array('name' => $_GET['firstname'] + $_GET['lastname']);
  header("Location: chat.php");
+ die();
 }
 //grab token
 $token = $_GET['access_token'];
